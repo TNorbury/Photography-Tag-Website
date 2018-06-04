@@ -1,0 +1,44 @@
+<html>
+   <head>
+      <title>Instagram/Flicker Tag Searcher</title>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="images.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <link rel="stylesheet" href="images.css" />
+   </head>
+   <body>
+      <div class="container">
+         <h2 id="instructions" class="row justify-content-center" style="text-align: center">
+            Click on the button to load images from&nbsp;
+            <a href="https://www.instagram.com/tylernorbury/" target="_blank">my Instagram</a>
+         </h2>
+         <div class="row">
+            <button id="loadImgsBtn" onClick="getImagesIG()" class="btn btn-dark">Click to load images</button>
+         </div>
+      </div>
+
+      <br />
+
+      <div id="IGPosts" class="container">
+         <!-- This is where the Instagram posts will go -->
+      </div>
+
+      <div id="flickrPosts" class="container">
+         <!-- This is where the Flickr posts will go -->
+      </div>
+
+      <div id="imageAndTags" class="container" style="display: none">
+         <div class="row justify-content-center">
+            <!-- A signle image will be shown here -->
+            <a id="imageLink" target="_blank">
+               <img id="image"/>
+            </a>
+         </div>
+         <br />
+         <div id="tags" class="row justify-content-center">
+            <!-- All the tags associated with the above image will be displayed
+             here -->
+         </div>
+      </div>
+   </body>
+</html>
