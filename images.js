@@ -1,4 +1,5 @@
-var token = "370837360.4ed1655.ba02ed1570364597b1039cc1862c23cb";
+// You have to generate your own token, unfortunately 
+var token = "";
 var IGRequestURL = "https://api.instagram.com/v1/users/self/media/recent/";
 var flickrRequestURL = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 var instagramData;
